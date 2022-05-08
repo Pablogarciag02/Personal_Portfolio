@@ -14,9 +14,10 @@
 <body class = "">
     <main>
 
-        
+        <!-- header part that shows my contact information through social media and eventually a link to my resume  -->
         <div class="flex justify-end mt-14 mr-24  invisible lg:visible">
             <span class = "mr-8">Contáctame</span>
+            <span class = "mr-8">Resumé</span>
             <li class ="inline list-none mx-4"><a href="https://github.com/Pablogarciag02"><img src="Assets/fotos/github.png"
                 width="20px"
                 height="20px"></a></a>
@@ -31,6 +32,7 @@
             </li>
         </div> 
 
+        <!-- Button that opens up the modal which contains my contact information This displays only when viewed on a small screen -->
         <div class ="float-right mr-8 lg:invisible ">
         <button id = "square" class ="" href="">
             <div id = "burgerwrap" class="">
@@ -41,19 +43,112 @@
         </button>
         </div>  
 
-        <!--<button id ="btnModal" class ="bg-green-300 float-right m-8 ">more info</button>!-->
+            <br>
+            <br>
+            <br>
+        
+            <!-- This is the modal that contains my contact information, it is shown when the button is pressed -->
+        <div id="mymodal" class="h-screen bg-white ">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class = "grid justify-items-center">
+                <span class = "text-xl">Contáctame</span>
+                <span class = "text-xl">Resumé</span>
+            </div> 
+             
+            <br>
 
-        <modal>
+            <!-- This is the info inside the modal -->
+            <div class = "list-none  flex justify-center">
 
-        </modal>
+                <li class ="mx-4"><a href="https://github.com/Pablogarciag02"><img src="Assets/fotos/github.png"
+                    width="20px"
+                    height="20px"></a></a>
+                </li>
+                <li class ="mx-4"><a href="https://www.linkedin.com/in/pablo-garc%C3%ADa-08842621b/"><img src="Assets/fotos/linkedin.png"
+                    width="20px"
+                    height="20px"></a>
+                </li>
+                <li class ="mx-4"> <a href="https://www.instagram.com/pablogarciag02/"> <img src="Assets/fotos/instagram.png"
+                    width="20px"
+                    height="20px"></a>
+                </li>
 
-        <a class="square" href="#">
-            <div class="burgerwrap">
-                <span></span>
-                <span></span>
+            </div>  
+        </div>
+
+        
+
+
+        <!-- This is the information about me -->
+        <div class ="justify-center">
+        <h1 class = "text-3xl mx-8 md:mx-32 xl:mx-64 2xl:ml-96">Fullstack Web Developer and Finance Student</h1>
+        </div>
+        <br>
+        <div class ="justify-center md:flex">
+            <p class ="text-lg mx-8 md:ml-32  xl:ml-64 2xl:ml-96">Fullstack Web developer with a passion for learning new and exiting things! Positive thinker interested in technology and finance trends. Intermediate skills in HTML and CSS. Begginner skills in Javascript front-end and back-end </p>
+            <br>
+            <img id="starterImg" class = "m-auto  h-96 md:mr-32 xl:mx-64 2xl:mr-96" src="/Assets/fotos/starterPic.jpg"></img>
+        </div>
+
+
+        <br>
+
+        <!-- These are the 4 divs that contain images and links to my projects/homeworks -->
+        <div class =" justify-center xl:flex flex-row">
+
+            <div class = "justify-center p-4 mx-8 rounded-lg hover:ring-4 hover:ring-gray-900">
+                <h2 class ="text-xl text-center my-8 font-semibold">Crypto Asset Manager</h2>
+                <img class ="w-64 m-auto rounded-lg" src="/Assets/fotos/cryptoAssetmgr.jpg"><img>
+                <p class ="text-center my-2 text-lg">Real time crypto prices. </p>
+                <div class = "w-full flex flex-col">
+                    <button id ="project1Github" class ="bg-black text-white rounded-lg py-2 my-4"></a>Github</button>
+                    <button id = "project1Page" class ="border border-black text-black rounded-lg py-2">Page</button>
+                </div>
             </div>
-        </a>
- 
+
+            <div class = "justify-center p-4 mx-8 rounded-lg hover:ring-4 hover:ring-gray-900">
+                <h2 class ="text-xl text-center my-8 font-semibold">Weather Dashboard</h2>
+                <img class ="w-64 m-auto rounded-lg" src="/Assets/fotos/weatherDashboard.jpg"><img>
+                <p class ="text-center my-2 text-lg">Real time current weather and 5 day forecast.</p>
+                <div class = "w-full flex flex-col">
+                    <button id ="project2Github" class ="bg-black text-white rounded-lg py-2 my-4">Github</button>
+                    <button  id = "project2Page" class ="border border-black text-black rounded-lg py-2">Page</button>
+                </div>
+            </div>
+
+            <div class = "justify-center p-4 mx-8 rounded-lg hover:ring-4 hover:ring-gray-900">
+                <h2 class ="text-xl text-center my-8 font-semibold">Code Quiz</h2>
+                <img class ="w-64 m-auto rounded-lg" src="/Assets/fotos/codingQuiz.jpg"><img>
+                <p class ="text-center my-2 text-lg">Coding Quiz to test your skills!</p>
+                <div class = "w-full flex flex-col">
+                    <button id ="project3Github"class ="bg-black text-white rounded-lg py-2 my-4">Github</button>
+                    <button  id = "project3Page" class ="border border-black text-black rounded-lg py-2">Page</button>
+                </div>
+            </div>
+
+            <div class = "justify-center p-4 mx-8 rounded-lg hover:ring-4 hover:ring-gray-900">
+                <h2 class ="text-xl text-center my-8 font-semibold">Work Day Scheduler</h2>
+                <img class ="w-64 m-auto rounded-lg" src="/Assets/fotos/workDay.jpg"><img>
+                <p class ="text-center my-2 text-lg">Very usefull for managing ones time!</p>
+                <div class = "w-full flex flex-col">
+                    <button id ="project4Github" class ="bg-black text-white rounded-lg py-2 my-4">Github</button>
+                    <button  id = "project4Page" class ="border border-black text-black rounded-lg py-2">Page</button>
+                </div>
+            </div>
+
+        </div>
+       
+
+
 
 
 
