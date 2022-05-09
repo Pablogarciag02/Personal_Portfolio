@@ -19,6 +19,12 @@ window.addEventListener('click', (event) => {
     }
 });
 
+window.addEventListener('touch', (event) => {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+});
+
 
 //Defining each button as a const to then through href go to the page where i want it to go.
 const Github1 = document.querySelector("#project1Github")
