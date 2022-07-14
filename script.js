@@ -1,6 +1,7 @@
 //Code for my modal
 const modal = document.querySelector("#mymodal");
-const squarebtn = document.querySelector("#square")
+const squarebtn = document.querySelector("#square");
+const gobackbtn = document.querySelector("#goback");
 
 modal.style.display = "none";
 
@@ -26,50 +27,12 @@ window.addEventListener('touch', (event) => {
 });
 
 
-//Defining each button as a const to then through href go to the page where i want it to go.
-const Github1 = document.querySelector("#project1Github")
-const page1 = document.querySelector("#project1Page")
+// This is added because on apple phones, window click or touch dont seem to be working
+gobackbtn.addEventListener("click", () =>{
+    modal.style.display = "none";
+})
 
-const Github2 = document.querySelector("#project2Github")
-const page2 = document.querySelector("#project2Page")
+gobackbtn.addEventListener("touch", () =>{
+    modal.style.display = "none";
+})
 
-const Github3 = document.querySelector("#project3Github")
-const page3 = document.querySelector("#project3Page")
-
-const Github4 = document.querySelector("#project4Github")
-const page4 = document.querySelector("#project4Page")
-
-Github1.addEventListener("click",()=>{
-    location.href = "https://github.com/richardguarnieri/personal-asset-manager"
-});
-
-page1.addEventListener("click",()=>{
-    location.href = "https://richardguarnieri.github.io/personal-asset-manager/"
-});
-
-
-Github2.addEventListener("click",()=>{
-    location.href = "https://github.com/Pablogarciag02/Real-Time-Weather-Info-SearchBar-"
-});
-
-page2.addEventListener("click",()=>{
-    location.href = "https://pablogarciag02.github.io/Real-Time-Weather-Info-SearchBar-/"
-});
-
-
-Github3.addEventListener("click",()=>{
-    location.href = "https://github.com/Pablogarciag02/HomeworkWeek4"
-});
-
-page3.addEventListener("click",()=>{
-    location.href = "https://pablogarciag02.github.io/HomeworkWeek4/"
-});
-
-
-Github4.addEventListener("click",()=>{
-    location.href = "https://github.com/Pablogarciag02/HomeworkWeek5"
-});
-
-page4.addEventListener("click",()=>{
-    location.href = "https://pablogarciag02.github.io/HomeworkWeek5/"
-});
